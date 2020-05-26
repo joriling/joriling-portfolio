@@ -1,0 +1,45 @@
+.Clouds {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.part-of-cloud {
+  background-color: white;
+  width: 240px;
+  height: 180px;
+  display: block;
+  border-bottom-left-radius: 20px 40px;
+  border-bottom-right-radius: 22px 40px;
+  border-top-left-radius: 130px;
+  border-top-right-radius: 130px;
+  position: absolute;
+  z-index: 1;
+}
+
+.part1 {
+  bottom: 0;
+  left: 0;
+}
+
+.part2 {
+  bottom: 0;
+  left: 185px;
+}
+
+.part3 {
+  bottom: 134px;
+  left: 140px;
+}
+
+.part4 {
+  bottom: 100px;
+  left: 281px;
+}
+
+.part5 {
+  bottom: 0px;
+  left: 350px;
+}

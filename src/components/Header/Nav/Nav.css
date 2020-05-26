@@ -1,0 +1,70 @@
+.Nav {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 40px 0;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.Nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+.Nav a:hover {
+	transition: all 0.4s ease-out;
+	background: linear-gradient(to right, #efa7de 0%, #ffa6a6 25%, #a6ff8a 50%, #fffba8 75%, #ce88ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.Checkbox {
+  display: none;
+}
+
+.Label {
+	position: relative;
+	display: block;
+	height: 1.6rem;
+	width: 3rem;
+	cursor: pointer;
+	left: -90px;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    0 8px 6px -6px rgba(0,0,0,0.2);  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0 8px 6px -6px rgba(0,0,0,0.2);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.Label::before, .Label::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: transform .2s ease;
+}
+.Label::before {
+  top: .4rem;
+}
+.Label::after {
+  bottom: .4rem;
+}
+
+.Checkbox:checked + .Label::before {
+  transform: translateY(0.3rem) rotate(45deg);
+}
+
+.Checkbox:checked + .Label::after {
+  transform: translateY(-0.4rem) rotate(-45deg);
+}

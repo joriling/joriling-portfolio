@@ -1,0 +1,16 @@
+.Headline {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+	font-size: 48px;
+	line-height: 1.5;
+	color: #1f2445;
+}
+
+.subTitle p {
+
+}

@@ -1,0 +1,28 @@
+.Rainbow {
+  position: fixed;
+    top: 0;
+    width: 50%;
+    height: 816px;
+    border-left: 3px solid rgba(239,167,222,1);
+    border-top: 3px solid rgba(239,167,222,1);
+    border-right: 0;
+    border-bottom: 0;]
+    bottom: -600px;
+    right: 0;
+    border-top-left-radius: 117%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  box-shadow: 
+    0 0 0 10px rgba(255,179,186,.5), 
+    0 0 0 10px rgba(255,166,166,.5),
+    0 0 0 20px rgba(255,223,186,.5),
+    0 0 0 30px rgba(255,251,168,.5),
+    0 0 0 20px rgba(255,255,186,.5),
+    0 0 0 40px rgba(166,255,138,.5),
+    0 0 0 40px rgba(186,255,201,.5),
+    0 0 0 60px rgba(164,207,255,.5),
+    0 0 0 30px rgba(186,255,255,.5),
+    0 0 0 20px rgba(146,210,249,.5),
+    0 0 0 70px rgba(206,136,255,.5);
+} 
