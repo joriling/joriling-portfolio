@@ -5,7 +5,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   z-index: -1;
 background: linear-gradient(124deg, #e4edf2, #cde2ee, #bbdcf0, #a8daf9, #92d2f9, #e6eae9, #a4cfff, #a8daf9, #a7c2d3);
 background-size: 1800% 1800%;

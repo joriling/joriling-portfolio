@@ -13,23 +13,33 @@ class Portfolio extends Component {
 	render() {
 		return (
 		<Fullpage>
-		<Nav/>
-        <FullPageSections>
-          <FullpageSection className={classes.Main}>
+		<div style={{position: 'fixed'}}>
+			<Nav/>
 			<SocialIcons/>
 			<Clouds />
 			<Rainbow />
 			<Banner />
+		</div>
+        <FullPageSections>
+          <FullpageSection className={classes.Main}>
+			<h1>1</h1>
 			<Headline />
           </FullpageSection>
           <FullpageSection style={{
-            backgroundColor: 'coral',
+          	// background: 'linear-gradient(to bottom left, #fff -1%, #fefefe 100%)',
             padding: '1em',
-          }}>2</FullpageSection>
+            height: '780px',
+          }}>
+          	<h1>2</h1>
+          	<p>Hello</p>
+          </FullpageSection>
           <FullpageSection style={{
-            backgroundColor: 'firebrick',
+            // background: 'linear-gradient(to bottom left, #c2e9fb -1%, #a1c4fd 100%)',
             padding: '1em',
-          }}>3</FullpageSection>
+          }}>
+          	<h1>3</h1>
+          	<p>hi</p>
+          </FullpageSection>
 
         </FullPageSections>
 
