@@ -1,18 +1,18 @@
 .Banner { 
-  height: 100%;
+  height: 500px;
   width: 100%;
   left:0;
   right: 0;
   top: 0;
   bottom: 0;
-  position: fixed;
+  position: relative;
   z-index: -1;
-background: linear-gradient(124deg, #e4edf2, #cde2ee, #bbdcf0, #a8daf9, #92d2f9, #e6eae9, #a4cfff, #a8daf9, #a7c2d3);
-background-size: 1800% 1800%;
+  background: linear-gradient(124deg, #e4edf2, #cde2ee, #bbdcf0, #a8daf9, #92d2f9, #e6eae9, #a4cfff, #a8daf9, #a7c2d3);
+  background-size: 1800% 1800%;
 
--webkit-animation: rainbow 18s ease infinite;
--z-animation: rainbow 18s ease infinite;
--o-animation: rainbow 18s ease infinite;
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
   animation: rainbow 18s ease infinite;}
 
 @-webkit-keyframes rainbow {

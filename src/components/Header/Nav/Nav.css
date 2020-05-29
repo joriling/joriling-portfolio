@@ -1,8 +1,4 @@
 .Nav {
-	position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     padding: 40px 40px 0;
     color: #fff;
     display: -webkit-box;
@@ -15,18 +11,47 @@
 }
 
 .Nav a {
+	z-index: 1005;
+	position: relative;
+	display: inline-block;
+	font-size: 2em;
+	font-weight: 800;
+	overflow: hidden;
+	background: linear-gradient(to right, #efa7de 0%, #ffa6a6 25%, #a6ff8a 50%, #fffba8 75%, #ce88ff 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 275ms ease;
 	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 24px;
-	color: #fff;
-	letter-spacing: 3px;
+  -webkit-text-stroke: 1px #6c8693;
 }
 
 .Nav a:hover {
-	transition: all 0.4s ease-out;
-	background: linear-gradient(to right, #efa7de 0%, #ffa6a6 25%, #a6ff8a 50%, #fffba8 75%, #ce88ff 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	background-position: 0 100%;
+}
+
+a.underline:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	height: 1em;
+	width: 100%;
+	border-bottom: 1px solid #ce88ff;
+	margin-top: 60px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.underline:hover:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 .Checkbox {
@@ -34,12 +59,13 @@
 }
 
 .Label {
+	z-index: 1005;
 	position: relative;
 	display: block;
 	height: 1.6rem;
-	width: 3rem;
+	width: 3.5rem;
 	cursor: pointer;
-	left: -90px;
+	left: 0;
 	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
 	-moz-box-shadow:    0 8px 6px -6px rgba(0,0,0,0.2);  /* Firefox 3.5 - 3.6 */
 	box-shadow:         0 8px 6px -6px rgba(0,0,0,0.2);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -67,4 +93,51 @@
 
 .Checkbox:checked + .Label::after {
   transform: translateY(-0.4rem) rotate(-45deg);
+}
+
+.DropdownContainer {
+	background-image: -webkit-gradient(linear, left top, right top, from(#d7e1e7), color-stop(42%, #faf7f2), to(#e4edf2));
+    background-image: -webkit-linear-gradient(left, #d7e1e7, #faf7f2 42%, #e4edf2);
+    background-image: -o-linear-gradient(left, #d7e1e7, #faf7f2 42%, #e4edf2);
+    background-image: linear-gradient(to right, #d7e1e7, #faf7f2 42%, #e4edf2);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    z-index: 1002;
+}
+
+.--open {
+	transform: translate3d(0, 0, 0);
+}
+
+.DropdownContainer ul {
+	text-align: center;
+}
+.DropdownContainer li {
+	list-style: none;
+}
+
+.DropdownContainer li a{
+	z-index: 1001;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 48px;
+	line-height: 3em;
+	color: #fff;
 }
