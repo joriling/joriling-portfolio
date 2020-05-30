@@ -1,5 +1,6 @@
 .Headline {
 	z-index: 900;
+	height: 100%;
     position: absolute;
     top: 60%;
     right: 0;
@@ -7,13 +8,18 @@
 }
 
 .title {
-	font-size: 48px;
+	font-size: 3rem;
 	line-height: 1.5;
 	color: #1f2445;
 	animation: shake 2s;
     -moz-animation: shake 2s; /* Firefox */
     -webkit-animation: shake 2s; /* Safari and Chrome */
     -o-animation: shake 2s; /* Opera */
+}
+
+.Headline p {
+	font-size: 24px;
+    color: #2d4f67;
 }
 
 .Headline h1:hover {
