@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Section, SectionsSpy } from "react-smart-sections";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import Banner from '../components/Banner';
 import Rainbow from '../components/Rainbow';
 import Clouds from '../components/Clouds';
+import Bubbles from '../components/Bubbles';
 import Headline from '../components/Header/Headline';
 import Nav from '../components/Header/Nav';
 import SocialIcons from '../components/SocialIcons/';
@@ -17,22 +17,21 @@ class Portfolio extends Component {
       <div>
         <Nav />
         <Clouds />
+        <Bubbles />
         <Rainbow />
         <SocialIcons />
          <div>
             <Section className={classes.Section} name="main">
               <Headline />
             </Section>
-            <Section className={classes.Section} name="about">
-              <h2>Second section</h2>
+            <Section className={classes.Section} style={{backgroundColor: '#fff', zIndex: '2000'}}name="about">
               <ScrollAnimation animateIn="fadeIn">
-                Some Text
+                 <h2>Second section</h2>
               </ScrollAnimation>
             </Section>
             <Section className={classes.Section} name="works">
-              <h2>Third section</h2>
                <ScrollAnimation animateIn="fadeIn">
-                Some Text
+                 <h2>Third section</h2>
                </ScrollAnimation>
             </Section>
             <Section className={classes.Section} name="contacts">

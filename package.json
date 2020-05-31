@@ -39,6 +39,7 @@
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.13.1",
+    "react-lottie": "^1.2.3",
     "react-router-dom": "^5.2.0",
     "react-smart-sections": "0.0.2",
     "regenerator-runtime": "^0.13.5",

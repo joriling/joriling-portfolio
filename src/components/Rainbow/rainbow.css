@@ -1,5 +1,6 @@
 .Rainbow {
-  position: fixed;
+    position: fixed;
+    z-index: -2;
     top: 0;
     width: 50%;
     height: 100%;
@@ -13,7 +14,7 @@
     border-bottom-left-radius: 50%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-  box-shadow:
+    box-shadow:
 
     0 0 0 10px rgba(206,136,255,.5), 
     0 0 0 20px rgba(164,207,255,.5),

@@ -16,10 +16,11 @@
   display: block;
   margin-end: auto;
   margin-start: auto;
-  border: 2px #efa7de solid;
+  border: 2px #ffd6f3 solid;
   overflow: hidden;
   margin-before: 0.5em;
   margin-after: 0.5em;
+  background: #ffd6f3;
 }
 
 .navigation li {
@@ -29,6 +30,5 @@
 
 .isActive {
   width: 50px !important;
-  border-color: #efa7de !important;
   transition: width .3s ease-in-out;
 }
