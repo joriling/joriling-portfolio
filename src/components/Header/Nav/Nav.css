@@ -1,4 +1,6 @@
 .Nav {
+	position: fixed;
+	width: 95%;
     padding: 40px 40px 0;
     color: #fff;
     display: -webkit-box;

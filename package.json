@@ -34,11 +34,13 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
+    "animate.css": "^4.1.0",
     "core-js": "^3.6.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-fullpage": "^0.1.19",
     "react-router-dom": "^5.2.0",
-    "regenerator-runtime": "^0.13.5"
+    "react-smart-sections": "0.0.2",
+    "regenerator-runtime": "^0.13.5",
+    "smart-sections": "0.0.6"
   }
 }
