@@ -41,7 +41,7 @@ module.exports = {
 					}
 				]
 			},
-			{ test: /\.(png|jpe?g|gif)$/, loader: 'url-loader?limit=8000&name=images/[name].[ext]' }
+			{ test: /\.(png|jpe?g|gif|svg)$/, loader: 'file-loader?limit=8000&name=[name].[ext]' }
 		]
 	},
 	plugins: [

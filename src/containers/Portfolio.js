@@ -7,7 +7,7 @@ import Clouds from '../components/Clouds';
 import Headline from '../components/Header/Headline';
 import Nav from '../components/Header/Nav';
 import SocialIcons from '../components/SocialIcons/';
-
+import Image from '../assets/images/pizza.jpg'
 import classes from './Portfolio.css';
 class Portfolio extends Component {
 	render() {
@@ -30,6 +30,7 @@ class Portfolio extends Component {
             </Section>
             <Section className={classes.Section} name="contacts">
               <h2>Fourth section</h2>
+              <img src={Image} alt=""/>
             </Section>
             <SectionsSpy
               render={sections => (

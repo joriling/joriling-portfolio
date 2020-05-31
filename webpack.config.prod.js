@@ -38,10 +38,10 @@ module.exports = {
 							ident: 'postcss',
 							plugins: () => [autoprefixer()]
 						} 
-					},
+					}
 				]
 			},
-			{ test: /\.(png|jpe?g|gif|svg)$/, loader: 'file-loader?name=/src/assets/[name].[ext]' }
+			{ test: /\.(png|jpe?g|gif|svg)$/, loader: 'file-loader?limit=8000&name=[name].[ext]' }
 		]
 	},
 	plugins: [
