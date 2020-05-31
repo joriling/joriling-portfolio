@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Section, SectionsSpy } from "react-smart-sections";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Banner from '../components/Banner';
 import Rainbow from '../components/Rainbow';
@@ -24,18 +25,30 @@ class Portfolio extends Component {
             </Section>
             <Section className={classes.Section} name="about">
               <h2>Second section</h2>
+              <ScrollAnimation animateIn="fadeIn">
+                Some Text
+              </ScrollAnimation>
             </Section>
             <Section className={classes.Section} name="works">
               <h2>Third section</h2>
+               <ScrollAnimation animateIn="fadeIn">
+                Some Text
+               </ScrollAnimation>
             </Section>
             <Section className={classes.Section} name="contacts">
               <h2>Fourth section</h2>
-              <img src={Image} alt=""/>
+               <ScrollAnimation animateIn="slideInLeft" delay="3">
+                 <img src={Image} alt=""/>
+               </ScrollAnimation>
             </Section>
             <SectionsSpy
               render={sections => (
                 <ul  className={classes.navigation}>
                   {sections.map(section => (
+                   <ScrollAnimation animateIn='slideInLeft'
+                    delay="500"
+                    initiallyVisible={true}
+                    animateOnce={true}>
                       <li>
                         <a href=""
                            onClick={section.scroll}
@@ -43,6 +56,7 @@ class Portfolio extends Component {
                            > 
                         </a>
                       </li>
+                  </ScrollAnimation>     
                   ))}
                 </ul>
               )}

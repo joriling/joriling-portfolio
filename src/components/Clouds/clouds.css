@@ -7,7 +7,12 @@
 }
 
 .part-of-cloud {
-  background-color: white;
+  background: linear-gradient(124deg, #e4edf2, #cde2ee, #bbdcf0, #a8daf9, #92d2f9, #e6eae9, #a4cfff, #a8daf9, #a7c2d3);
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
   width: 240px;
   height: 180px;
   display: block;
@@ -42,4 +47,25 @@
 .part5 {
   bottom: 0px;
   left: 350px;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }

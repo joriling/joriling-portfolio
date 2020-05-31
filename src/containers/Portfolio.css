@@ -10,13 +10,13 @@
 }
 
 .navigation a {
-  content: '';
   text-decoration: none;
   width: 30px;
+  height: 5px;
   display: block;
   margin-end: auto;
   margin-start: auto;
-  border: 2px #efa7de inset;
+  border: 2px #efa7de solid;
   overflow: hidden;
   margin-before: 0.5em;
   margin-after: 0.5em;
