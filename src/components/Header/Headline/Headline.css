@@ -1,29 +1,29 @@
 .Headline {
   z-index: 900;
-  position: absolute;
-  top: 40%;
-  right: 12%;
-  text-align: center;
+  position: fixed;
+  top: 35%;
+  right: 20%;
+  text-align: left;
+  color: #2d4f67;
 }
 
 .title {
   font-size: 3rem;
   line-height: 1.5;
-  color: #1f2445;
   animation: shake 2s;
   -moz-animation: shake 2s; /* Firefox */
   -webkit-animation: shake 2s; /* Safari and Chrome */
   -o-animation: shake 2s; /* Opera */
+  text-transform: uppercase;
 }
 
 .Greetings {
-  font-size: 2rem;
-  color: #2d4f67;
+  font-size: 1.8rem;
+  line-height: .5;
 }
 
 .Headline p {
-  font-size: 24px;
-  color: #2d4f67;
+  font-size: 18px;
 }
 
 .Headline h1:hover {

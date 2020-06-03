@@ -64,7 +64,7 @@ a.underline:hover:after {
 	z-index: 1005;
 	position: relative;
 	display: block;
-	height: 1.6rem;
+	height: 3.5rem;
 	width: 3.5rem;
 	cursor: pointer;
 	left: 0;
@@ -78,15 +78,15 @@ a.underline:hover:after {
 	display: inline-block;
 	left: 0;
 	width: 100%;
-	height: 2px;
-	background-color: #efa7de;
+	height: 7px;
+	background-color: #ffd6f3;
 	transition: transform .2s ease;
 }
 .Label::before {
-  top: .4rem;
+  top: 1rem;
 }
 .Label::after {
-  bottom: .4rem;
+  bottom: 1.3rem;
 }
 
 .Checkbox:checked + .Label::before {
@@ -98,10 +98,10 @@ a.underline:hover:after {
 }
 
 .DropdownContainer {
-	background-image: -webkit-gradient(linear, left top, right top, from(#d7e1e7), color-stop(42%, #faf7f2), to(#e4edf2));
-    background-image: -webkit-linear-gradient(left, #d7e1e7, #faf7f2 42%, #e4edf2);
-    background-image: -o-linear-gradient(left, #d7e1e7, #faf7f2 42%, #e4edf2);
-    background-image: linear-gradient(to right, #d7e1e7, #faf7f2 42%, #e4edf2);
+	background-image: -webkit-gradient(linear, left top, right top, from(#d7e1e7), color-stop(42%, #faf7f2), to(#b2bec3));
+    background-image: -webkit-linear-gradient(left, #d7e1e7, #faf7f2 42%, #b2bec3);
+    background-image: -o-linear-gradient(left, #d7e1e7, #faf7f2 42%, #b2bec3);
+    background-image: linear-gradient(to right, #d7e1e7, #faf7f2 42%, #b2bec3);
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -142,4 +142,41 @@ a.underline:hover:after {
 	font-size: 48px;
 	line-height: 3em;
 	color: #fff;
+}
+
+.Scrollwrapper {
+	z-index: 1000;
+	position: fixed;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	bottom: 0;
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	height:25%;
+}
+
+.Aside {
+	padding: 15px;
+	writing-mode: tb-rl;
+	margin-top: 10px;
+}
+
+.Scrollwrapper span:after {
+	z-index: 1000;
+	color: white;
+	content: '\02193';
+	font-size: 40px;
+	position: absolute;
+	bottom: 10%;
+	margin-top: -28px;
+	left: 50%;
+	margin-left: -10px;
+	animation: occasional-arrow-bounce 3s infinite .5s alternate ease-out;
+}
+
+@keyframes occasional-arrow-bounce {
+  0% { transform: translateY(0); }
+  79% { transform: translateY(0); }
+  80% { transform: translateY(2px); }
+  100% { transform: translateY(-4px); }
 }

@@ -7,6 +7,7 @@ import Clouds from '../components/Clouds';
 import Bubbles from '../components/Bubbles';
 import Headline from '../components/Header/Headline';
 import Nav from '../components/Header/Nav';
+import AsideScrollDown from '../components/Header/Nav/AsideScrollDown';
 import SocialIcons from '../components/SocialIcons/';
 import Image from '../assets/images/pizza.jpg'
 import classes from './Portfolio.css';
@@ -23,6 +24,7 @@ class Portfolio extends Component {
          <div>
             <Section className={classes.Section} name="main">
               <Headline />
+              <AsideScrollDown />
             </Section>
             <Section className={classes.Section} style={{backgroundColor: '#fff', zIndex: '2000'}}name="about">
               <ScrollAnimation animateIn="fadeIn">
@@ -61,8 +63,7 @@ class Portfolio extends Component {
               )}
             />
           </div>
-      </div>
-    );
+      </div>    );
 	}
 }
 

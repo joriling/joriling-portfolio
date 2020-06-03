@@ -1,6 +1,6 @@
 .Bubbles {
   right: 0;
-  position: absolute;
+  position: fixed;
   top: 10%;
   transform: rotate(180deg);
   z-index: -1;

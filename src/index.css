@@ -12,7 +12,8 @@ body {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background: linear-gradient(124deg, #e4edf2, #cde2ee, #bbdcf0, #a8daf9, #92d2f9, #e6eae9, #a4cfff, #a8daf9, #a7c2d3);
+	background: #74b9ff;
+	/*background: linear-gradient(124deg, #e4edf2, #cde2ee, #bbdcf0, #a8daf9, #92d2f9, #e6eae9, #a4cfff, #a8daf9, #a7c2d3);*/
 	background-size: 1800% 1800%;
 	-webkit-animation: rainbow 18s ease infinite;
 	-z-animation: rainbow 18s ease infinite;
