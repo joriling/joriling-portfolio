@@ -9,9 +9,16 @@ import Headline from '../components/Header/Headline';
 import Nav from '../components/Header/Nav';
 import AsideScrollDown from '../components/Header/Nav/AsideScrollDown';
 import SocialIcons from '../components/SocialIcons/';
+import AboutMe from '../components/AboutMe';
 import Image from '../assets/images/pizza.jpg'
 import classes from './Portfolio.css';
+
 class Portfolio extends Component {
+  constuctor(props) {
+    state = {
+      activeSection: '',
+    }
+  }
 	render() {
 
     return (
@@ -27,12 +34,12 @@ class Portfolio extends Component {
               <AsideScrollDown />
             </Section>
             <Section className={classes.Section} style={{backgroundColor: '#fff', zIndex: '2000'}}name="about">
-              <ScrollAnimation animateIn="fadeIn">
-                 <h2>Second section</h2>
+              <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut">
+                <AboutMe/>
               </ScrollAnimation>
             </Section>
             <Section className={classes.Section} name="works">
-               <ScrollAnimation animateIn="fadeIn">
+               <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                  <h2>Third section</h2>
                </ScrollAnimation>
             </Section>
@@ -47,10 +54,9 @@ class Portfolio extends Component {
                 <ul  className={classes.navigation}>
                   {sections.map(section => (
                    <ScrollAnimation animateIn='slideInLeft'
-                    delay="500"
                     initiallyVisible={true}
                     animateOnce={true}>
-                      <li>
+                      <li key={section.name}>
                         <a href=""
                            onClick={section.scroll}
                            className={section.active ? classes.isActive : ""}

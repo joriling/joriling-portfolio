@@ -145,7 +145,6 @@ a.underline:hover:after {
 }
 
 .Scrollwrapper {
-	z-index: 1000;
 	position: fixed;
 	text-transform: uppercase;
 	letter-spacing: 2px;

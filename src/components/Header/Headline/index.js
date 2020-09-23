@@ -4,13 +4,13 @@ import classes from './Headline.css';
 
 const headline =  (props) => (
 	<div className={classes.Headline}>
-	 <ScrollAnimation animateIn="slideInRight" animateout="slideOutRight" delay="500">
+	 <ScrollAnimation animateIn="slideInRight" animateOut="fadeOut">
             <h1 className={classes.Greetings}>こんにちは!</h1>
      </ScrollAnimation>
-	 <ScrollAnimation animateIn="slideInLeft" animateout="slideOutLeft" delay="500">
+	 <ScrollAnimation animateIn="slideInLeft" animateOut="fadeOut">
             <h1 className={classes.title}>I'm Jolly Ann</h1>
      </ScrollAnimation>
-      <ScrollAnimation animateIn="slideInRight" animateout="slideOutRight" delay="500">
+      <ScrollAnimation animateIn="slideInRight" animateOut="fadeOut">
             <p classes={classes.subTitle}>Front-end Developer/Designer</p>
      </ScrollAnimation>
 	</div>
