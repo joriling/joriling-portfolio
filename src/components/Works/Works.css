@@ -1,0 +1,16 @@
+.WorksContainer {
+	background: #74b9ff;
+	height: 100vh;
+	z-index: 200;
+}
+
+.section-title {
+  color: #344C6C;
+  position: absolute;
+  right: 5%;
+  padding-top: 2%;
+  padding-right: 5%;
+  border-bottom: 5px solid currentColor;
+  display: inline-block;
+    line-height: 1.5;
+}

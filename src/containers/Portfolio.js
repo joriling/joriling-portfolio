@@ -10,7 +10,7 @@ import Nav from '../components/Header/Nav';
 import AsideScrollDown from '../components/Header/Nav/AsideScrollDown';
 import SocialIcons from '../components/SocialIcons/';
 import AboutMe from '../components/AboutMe';
-import Image from '../assets/images/pizza.jpg'
+import Works from '../components/Works';
 import classes from './Portfolio.css';
 
 class Portfolio extends Component {
@@ -33,22 +33,22 @@ class Portfolio extends Component {
               <Headline />
               <AsideScrollDown />
             </Section>
-            <Section className={classes.Section} style={{backgroundColor: '#fff', zIndex: '2000'}}name="about">
+            <Section className={classes.Section} name="about">
               <ScrollAnimation animateIn="zoomIn" animateOut="fadeOut">
                 <AboutMe/>
               </ScrollAnimation>
             </Section>
-            <Section className={classes.Section} name="works">
+            {/* <Section className={classes.Section} name="works">
                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-                 <h2>Third section</h2>
+                  <Works/>
                </ScrollAnimation>
-            </Section>
-            <Section className={classes.Section} name="contacts">
+            </Section> */}
+            {/* <Section className={classes.Section} name="contacts">
               <h2>Fourth section</h2>
                <ScrollAnimation animateIn="slideInLeft" delay="3">
-                 <img src={Image} alt=""/>
+               
                </ScrollAnimation>
-            </Section>
+            </Section> */}
             <SectionsSpy
               render={sections => (
                 <ul  className={classes.navigation}>

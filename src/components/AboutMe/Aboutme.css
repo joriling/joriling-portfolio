@@ -5,11 +5,11 @@
 }
 
 .JorilingImage {
-	background-image: url('../../assets/images/joriling.gif');
+	background-image: url('../../assets/images/joriling.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 300px;
-	height: 260px;
+	height: 300px;
 	display: inline-block;
 }
 
@@ -22,6 +22,7 @@
 .AboutDesigner, .AboutImage, .AboutCoder {
 	display: inline-block;
 	width: 30%;
+	margin-top: 10%
 }
 
 .AboutImage {

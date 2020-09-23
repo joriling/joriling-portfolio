@@ -12,7 +12,7 @@ const aboutMe =  (props) => {
 			    <div className={classes.AboutContent}>
 			    	<div className={classes.AboutDesigner}>
 			    		<h1>Designer</h1>
-			    		<p>I love to create simple design and functional user experience.</p>
+			    		<p>I love to create simple designs and functional user experience.</p>
 			    		<p>Creating solutions to help users experienced a good application are one of my goals as a designer.</p>
 			    	</div>
 			    	<div className={classes.AboutImage}>
@@ -21,7 +21,8 @@ const aboutMe =  (props) => {
 				    </div>
 				    <div className={classes.AboutCoder}>
 				    	<h1>{"<Coder />"}</h1>
-				    	<p>I'm not just a designer by heart I also love coding with experience in developing applications running in Laravel api and React JS front-end.</p>
+				    	<p>I don't limit myself in designing, <br /> I try also to make my designs move through coding.</p>
+				    	<p>I'm into developing applications running in Laravel for the API and ReactJS for the front-end.</p>
 				    </div>
 				</div>
 			</div>
